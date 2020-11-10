@@ -10,4 +10,10 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <string name="patient">patient</string>
+    <string name="doctor">doctor</string>
+    <string name="Acceuil">Salut à toi jeune diabétique</string>
+    <string name="password">mot de passe</string>
+    <string name="pseudo">pseudo</string>
+    <string name="connect">connexion</string>
 </resources>
