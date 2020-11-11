@@ -1,5 +1,6 @@
 package com.drtchetting.applist5;
 
+import android.opengl.Visibility;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Menu;
@@ -35,12 +36,14 @@ public class PagePrincipale extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+        fab.setVisibility(View.GONE);
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow)
+                R.id.nav_profile)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);

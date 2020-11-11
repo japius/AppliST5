@@ -40,7 +40,7 @@
         android:layout_above="@id/type_connexion"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
-        android:text="@string/Acceuil"
+        android:text="@string/Accueil"
         android:padding="3dip"
         android:gravity="center"
         android:textSize="38sp"

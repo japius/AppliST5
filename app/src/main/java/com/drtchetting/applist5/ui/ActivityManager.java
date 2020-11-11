@@ -10,15 +10,22 @@ public class ActivityManager {
     private Activity actualActivity;
     private final Class accueil = Accueil.class;
     private final Class pageprincipale = PagePrincipale.class;
+
     public ActivityManager(Activity activity){
         this.actualActivity=activity;
     }
-    public void launchPagePrincipale(){
-        Intent intent = new Intent(actualActivity,pageprincipale);
+
+    private void launchActivity(Class myclass){
+        Intent intent = new Intent(actualActivity,myclass);
+        actualActivity.finish();
         actualActivity.startActivity(intent);
+
+    }
+
+    public void launchPagePrincipale(){
+        launchActivity(pageprincipale);
     }
     public void launchAccueil(){
-        Intent intent = new Intent(actualActivity,accueil);
-        actualActivity.startActivity(intent);
+        launchActivity(accueil);
     }
 }
