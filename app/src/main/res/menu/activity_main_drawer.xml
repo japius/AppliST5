@@ -8,5 +8,10 @@
             android:id="@+id/nav_profile"
             android:icon="@drawable/profile"
             android:title="@string/profile" />
+        <item
+            android:id="@+id/nav_statistiques"
+            android:icon="@drawable/profile"
+            android:title="@string/statistique" />
+
     </group>
 </menu>

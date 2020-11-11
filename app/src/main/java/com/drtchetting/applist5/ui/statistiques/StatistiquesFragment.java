@@ -1,7 +1,5 @@
 package com.drtchetting.applist5.ui.statistiques;
 
-import androidx.lifecycle.ViewModelProvider;
-
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -13,16 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.drtchetting.applist5.R;
-import android.os.Bundle;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
 
-import androidx.annotation.NonNull;
-import androidx.fragment.app.Fragment;
-import androidx.lifecycle.ViewModelProvider;
-
-import com.drtchetting.applist5.R;
 import com.jjoe64.graphview.GraphView;
 import com.jjoe64.graphview.Viewport;
 import com.jjoe64.graphview.series.DataPoint;
@@ -30,14 +19,14 @@ import com.jjoe64.graphview.series.LineGraphSeries;
 
 import java.util.Random;
 
-public class Statistiques extends Fragment {
+public class StatistiquesFragment extends Fragment {
     private static final Random RANDOM = new Random();
     private LineGraphSeries<DataPoint> series;
     private int lastX = 0;
     private StatistiquesViewModel mViewModel;
 
-    public static Statistiques newInstance() {
-        return new Statistiques();
+    public static StatistiquesFragment newInstance() {
+        return new StatistiquesFragment();
     }
 
     @Override
